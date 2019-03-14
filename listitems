@@ -1,0 +1,10 @@
+pipeline {
+	    agent any
+	
+	    stages {
+	        stage('checking list of items') {
+	            steps {
+	                echo 'Items are....'
+	                sh 'ls'
+	            }
+	        }
